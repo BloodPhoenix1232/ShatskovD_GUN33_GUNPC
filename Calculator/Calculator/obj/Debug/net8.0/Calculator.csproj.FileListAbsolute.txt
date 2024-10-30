@@ -1,0 +1,14 @@
+D:\Desktop\Лабараторные\Курс\Calculator\Calculator\bin\Debug\net8.0\Calculator.exe
+D:\Desktop\Лабараторные\Курс\Calculator\Calculator\bin\Debug\net8.0\Calculator.deps.json
+D:\Desktop\Лабараторные\Курс\Calculator\Calculator\bin\Debug\net8.0\Calculator.runtimeconfig.json
+D:\Desktop\Лабараторные\Курс\Calculator\Calculator\bin\Debug\net8.0\Calculator.dll
+D:\Desktop\Лабараторные\Курс\Calculator\Calculator\bin\Debug\net8.0\Calculator.pdb
+D:\Desktop\Лабараторные\Курс\Calculator\Calculator\obj\Debug\net8.0\Calculator.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\Лабараторные\Курс\Calculator\Calculator\obj\Debug\net8.0\Calculator.AssemblyInfoInputs.cache
+D:\Desktop\Лабараторные\Курс\Calculator\Calculator\obj\Debug\net8.0\Calculator.AssemblyInfo.cs
+D:\Desktop\Лабараторные\Курс\Calculator\Calculator\obj\Debug\net8.0\Calculator.csproj.CoreCompileInputs.cache
+D:\Desktop\Лабараторные\Курс\Calculator\Calculator\obj\Debug\net8.0\Calculator.dll
+D:\Desktop\Лабараторные\Курс\Calculator\Calculator\obj\Debug\net8.0\refint\Calculator.dll
+D:\Desktop\Лабараторные\Курс\Calculator\Calculator\obj\Debug\net8.0\Calculator.pdb
+D:\Desktop\Лабараторные\Курс\Calculator\Calculator\obj\Debug\net8.0\Calculator.genruntimeconfig.cache
+D:\Desktop\Лабараторные\Курс\Calculator\Calculator\obj\Debug\net8.0\ref\Calculator.dll
