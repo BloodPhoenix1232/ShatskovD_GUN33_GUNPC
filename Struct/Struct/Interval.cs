@@ -1,0 +1,61 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Struct
+{
+    internal struct Interval
+    {
+        private int MinValue { get; }
+
+        private int MaxValue { get; }
+
+        Random random = new Random();
+
+        public int Min()
+        {
+            return MinValue;
+        }
+
+        public int Max()
+        {
+            return MaxValue;
+        }
+
+        public double Get()
+        {
+            return random.NextDouble() * (Max() - Min()) + Min();
+        }
+        public Interval(int minValue, int maxValue)
+        {
+            if (minValue > maxValue)
+            {
+                (minValue, maxValue) = (maxValue, minValue);
+                Console.WriteLine("Некорректные входные данные.");
+            }
+
+            if (minValue < 0)
+            {
+                minValue = 0;
+                Console.WriteLine("Некорректные входные данные.");
+            }
+
+            if (maxValue < 0)
+            {
+                maxValue = 0;
+                Console.WriteLine("Некорректные входные данные.");
+            }
+
+            if(minValue == maxValue)
+            {
+                maxValue += 10;
+                Console.WriteLine("Некорректные входные данные.");
+            }
+
+            MinValue = minValue;
+            MaxValue = maxValue;
+        }
+    }
+}

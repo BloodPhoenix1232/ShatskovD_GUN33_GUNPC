@@ -1,0 +1,14 @@
+D:\Desktop\Лабараторные\Курс\Struct\Struct\bin\Debug\net8.0\Struct.exe
+D:\Desktop\Лабараторные\Курс\Struct\Struct\bin\Debug\net8.0\Struct.deps.json
+D:\Desktop\Лабараторные\Курс\Struct\Struct\bin\Debug\net8.0\Struct.runtimeconfig.json
+D:\Desktop\Лабараторные\Курс\Struct\Struct\bin\Debug\net8.0\Struct.dll
+D:\Desktop\Лабараторные\Курс\Struct\Struct\bin\Debug\net8.0\Struct.pdb
+D:\Desktop\Лабараторные\Курс\Struct\Struct\obj\Debug\net8.0\Struct.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\Лабараторные\Курс\Struct\Struct\obj\Debug\net8.0\Struct.AssemblyInfoInputs.cache
+D:\Desktop\Лабараторные\Курс\Struct\Struct\obj\Debug\net8.0\Struct.AssemblyInfo.cs
+D:\Desktop\Лабараторные\Курс\Struct\Struct\obj\Debug\net8.0\Struct.csproj.CoreCompileInputs.cache
+D:\Desktop\Лабараторные\Курс\Struct\Struct\obj\Debug\net8.0\Struct.dll
+D:\Desktop\Лабараторные\Курс\Struct\Struct\obj\Debug\net8.0\refint\Struct.dll
+D:\Desktop\Лабараторные\Курс\Struct\Struct\obj\Debug\net8.0\Struct.pdb
+D:\Desktop\Лабараторные\Курс\Struct\Struct\obj\Debug\net8.0\Struct.genruntimeconfig.cache
+D:\Desktop\Лабараторные\Курс\Struct\Struct\obj\Debug\net8.0\ref\Struct.dll
