@@ -8,9 +8,9 @@ namespace Struct
 {
     internal struct Interval
     {
-        private int MinValue { get; }
+        public int MinValue { get; }
 
-        private int MaxValue { get; }
+        public int MaxValue { get; }
 
         Random random = new Random();
 
@@ -26,7 +26,7 @@ namespace Struct
 
         public double Get()
         {
-            return random.NextDouble() * (Max() - Min()) + Min();
+            return random.NextDouble() * (MaxValue - MinValue) + MinValue;
         }
         public Interval(int minValue, int maxValue)
         {
@@ -36,13 +36,13 @@ namespace Struct
                 Console.WriteLine("Некорректные входные данные.");
             }
 
-            if (minValue < 0)
+            if (!(minValue >= 0))
             {
                 minValue = 0;
                 Console.WriteLine("Некорректные входные данные.");
             }
 
-            if (maxValue < 0)
+            if (!(maxValue >= 0))
             {
                 maxValue = 0;
                 Console.WriteLine("Некорректные входные данные.");

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Desktop\\Лабараторные\\Курс\\Struct\\Struct\\Struct.csproj",
+      "projectUniqueName": "C:\\Users\\Дмитрий\\ShatskovD_GUN33_GUNPC\\Struct\\Struct\\Struct.csproj",
       "projectName": "Struct",
-      "projectPath": "D:\\Desktop\\Лабараторные\\Курс\\Struct\\Struct\\Struct.csproj",
+      "projectPath": "C:\\Users\\Дмитрий\\ShatskovD_GUN33_GUNPC\\Struct\\Struct\\Struct.csproj",
       "packagesPath": "C:\\Users\\Дмитрий\\.nuget\\packages\\",
-      "outputPath": "D:\\Desktop\\Лабараторные\\Курс\\Struct\\Struct\\obj\\",
+      "outputPath": "C:\\Users\\Дмитрий\\ShatskovD_GUN33_GUNPC\\Struct\\Struct\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Дмитрий\\AppData\\Roaming\\NuGet\\NuGet.Config",

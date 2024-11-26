@@ -14,7 +14,7 @@ namespace Struct
         {
             {
                 _rooms[0] = new Room(new Unit("Шаман", 0, 5), new Weapon("Посох", 2, 5));
-                _rooms[1] = new Room(new Unit("Скелет - лучник", 0, 3), new Weapon("Лук", 1, 3));
+                _rooms[1] = new Room(new Unit("Скелет - лучник", 0, 3), new Weapon("Лук", 0, 3));
                 _rooms[2] = new Room(new Unit("Стражник", 0, 4), new Weapon("Меч", 2, 4));
                 _rooms[3] = new Room(new Unit("Огр", 0, 5), new Weapon("Дубина", 1, 5));
                 _rooms[4] = new Room(new Unit("Слизень", 0, 2), new Weapon("Кинжал", 3, 4));
