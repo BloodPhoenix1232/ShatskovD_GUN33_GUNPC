@@ -13,21 +13,14 @@ namespace Struct
         public int MaxValue { get; }
 
         Random random = new Random();
-
-        public int Min()
+        public double Get
         {
-            return MinValue;
+            get
+            {
+                return random.NextDouble() * (MaxValue - MinValue) + MinValue;
+            }
         }
-
-        public int Max()
-        {
-            return MaxValue;
-        }
-
-        public double Get()
-        {
-            return random.NextDouble() * (MaxValue - MinValue) + MinValue;
-        }
+        
         public Interval(int minValue, int maxValue)
         {
             if (minValue > maxValue)
