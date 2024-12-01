@@ -119,10 +119,14 @@ namespace HomeWork6
                         }
                         else
                         {
-                            
+                            if (i % 2 == 0)
+                            {
                                 list.AddLast(element);
-                            
-                            
+                            }
+                            else
+                            {
+                                list.AddFirst(element);
+                            }
                         }
                     }
 
