@@ -1,0 +1,14 @@
+D:\Desktop\Лабараторные\Курс\HomeWork7\HomeWork7\bin\Debug\net8.0\HomeWork7.exe
+D:\Desktop\Лабараторные\Курс\HomeWork7\HomeWork7\bin\Debug\net8.0\HomeWork7.deps.json
+D:\Desktop\Лабараторные\Курс\HomeWork7\HomeWork7\bin\Debug\net8.0\HomeWork7.runtimeconfig.json
+D:\Desktop\Лабараторные\Курс\HomeWork7\HomeWork7\bin\Debug\net8.0\HomeWork7.dll
+D:\Desktop\Лабараторные\Курс\HomeWork7\HomeWork7\bin\Debug\net8.0\HomeWork7.pdb
+D:\Desktop\Лабараторные\Курс\HomeWork7\HomeWork7\obj\Debug\net8.0\HomeWork7.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\Лабараторные\Курс\HomeWork7\HomeWork7\obj\Debug\net8.0\HomeWork7.AssemblyInfoInputs.cache
+D:\Desktop\Лабараторные\Курс\HomeWork7\HomeWork7\obj\Debug\net8.0\HomeWork7.AssemblyInfo.cs
+D:\Desktop\Лабараторные\Курс\HomeWork7\HomeWork7\obj\Debug\net8.0\HomeWork7.csproj.CoreCompileInputs.cache
+D:\Desktop\Лабараторные\Курс\HomeWork7\HomeWork7\obj\Debug\net8.0\HomeWork7.dll
+D:\Desktop\Лабараторные\Курс\HomeWork7\HomeWork7\obj\Debug\net8.0\refint\HomeWork7.dll
+D:\Desktop\Лабараторные\Курс\HomeWork7\HomeWork7\obj\Debug\net8.0\HomeWork7.pdb
+D:\Desktop\Лабараторные\Курс\HomeWork7\HomeWork7\obj\Debug\net8.0\HomeWork7.genruntimeconfig.cache
+D:\Desktop\Лабараторные\Курс\HomeWork7\HomeWork7\obj\Debug\net8.0\ref\HomeWork7.dll
