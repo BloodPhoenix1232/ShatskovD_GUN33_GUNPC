@@ -1,15 +1,17 @@
 ﻿using GamePrototype.Items.EconomicItems;
+using GamePrototype.Items.EquipItems;
+using GamePrototype.Utils;
 
 namespace GamePrototype.Units
 {
     public abstract class Unit
     {
-        private const int INVENTORY_SIZE = 3;
+        private const int INVENTORY_SIZE = 5;
         private uint _health;
         private uint _maxHealth;
-        protected uint BaseDamage;
+        private uint _baseDamage;
         protected Inventory Inventory;
-        
+
         public string Name { get; private set; }
         public uint Health
         {
@@ -17,6 +19,13 @@ namespace GamePrototype.Units
             protected set => _health = value;
         }
 
+        public uint Damage
+        {
+            get => _baseDamage;
+            protected set => _baseDamage = value;
+        }
+
+        public uint BaseDamage => _baseDamage;
         public uint MaxHealth => _maxHealth;
 
         protected Unit(string name, uint health, uint maxHealth, uint baseDamage) 
@@ -24,13 +33,14 @@ namespace GamePrototype.Units
             Name = name;
             _health = health;
             _maxHealth = maxHealth;
-            BaseDamage = baseDamage;
+            _baseDamage = baseDamage;
             Inventory = new Inventory(INVENTORY_SIZE);
         }
 
         public void ApplyDamage(uint damage)
         {
             var damageApplied = CalculateAppliedDamage(damage);
+
             if (_health < damageApplied || (_health - damageApplied) <= 0) 
             {
                 _health = 0;

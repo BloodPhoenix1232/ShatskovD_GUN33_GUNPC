@@ -1,11 +1,13 @@
-﻿using GamePrototype.Units;
+﻿using GamePrototype.Items.EquipItems;
+using GamePrototype.Units;
+using GamePrototype.Utils;
 
 namespace GamePrototype.Combat
 {
     public sealed class CombatManager
     {
         private readonly Random _random = new();
-        
+
         public Unit StartCombat(Unit player, Unit enemy) => PlayCombatRoutine(player, enemy);
 
         private Unit PlayCombatRoutine(Unit player, Unit enemy)
@@ -43,7 +45,7 @@ namespace GamePrototype.Combat
             var enemyInput = (RockPaperScissors) _random.Next(1, 3);
             Console.WriteLine($"Result player = {rockPaperScissors} and enemy = {enemyInput}");
             switch (rockPaperScissors) 
-            {
+            { 
                 // player hit
                 case RockPaperScissors.Rock when enemyInput == RockPaperScissors.Scissors:
                     ApplyDamage(player, enemy);
@@ -53,6 +55,7 @@ namespace GamePrototype.Combat
                     break;
                 case RockPaperScissors.Paper when enemyInput == RockPaperScissors.Rock:
                     ApplyDamage(player, enemy);
+                    
                     break;
                 // enemy hit
                 case RockPaperScissors.Scissors when enemyInput == RockPaperScissors.Rock:

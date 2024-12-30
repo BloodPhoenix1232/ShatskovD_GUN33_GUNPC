@@ -2,9 +2,9 @@
 
 namespace GamePrototype.Items.EquipItems
 {
-    public sealed class Weapon : EquipItem
+    public sealed class RangeWeapon : EquipItem
     {
-        public Weapon(uint damage, uint durability, string name) : base(durability, name) => Damage = damage;
+        public RangeWeapon(uint damage, uint durability, string name) : base(durability, name) => Damage = damage;
 
         public uint Damage { get; set; }
 

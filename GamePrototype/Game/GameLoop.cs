@@ -10,9 +10,16 @@ namespace GamePrototype.Game
         private Unit _player;
         private DungeonRoom _dungeon;
         private readonly CombatManager _combatManager = new CombatManager();
+        private ChooseDifficulty _difficulty;
         
         public void StartGame() 
         {
+            Console.WriteLine("Выберите сложность: ");
+            Console.WriteLine("Easy = 0 Hard = 1");
+            if (Enum.TryParse<ChooseDifficulty>(Console.ReadLine(), out var difficulty))
+            {
+                _difficulty = difficulty;
+            }
             Initialize();
             Console.WriteLine("Entering the dungeon");
             StartGameLoop();
@@ -23,7 +30,7 @@ namespace GamePrototype.Game
         private void Initialize()
         {
             Console.WriteLine("Welcome, player!");
-            _dungeon = DungeonBuilder.BuildDungeon();
+            _dungeon = DungeonBuilder.BuildDungeon(_difficulty);
             Console.WriteLine("Enter your name");
             _player = UnitFactoryDemo.CreatePlayer(Console.ReadLine());
             Console.WriteLine($"Hello {_player.Name}");

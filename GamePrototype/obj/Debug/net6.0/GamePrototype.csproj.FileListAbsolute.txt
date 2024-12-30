@@ -13,3 +13,17 @@ C:\Users\User\source\repos\GamePrototype\obj\Debug\net6.0\refint\GamePrototype.d
 C:\Users\User\source\repos\GamePrototype\obj\Debug\net6.0\GamePrototype.pdb
 C:\Users\User\source\repos\GamePrototype\obj\Debug\net6.0\GamePrototype.genruntimeconfig.cache
 C:\Users\User\source\repos\GamePrototype\obj\Debug\net6.0\ref\GamePrototype.dll
+D:\Desktop\Лабараторные\Курс\GamePrototype\bin\Debug\net6.0\GamePrototype.exe
+D:\Desktop\Лабараторные\Курс\GamePrototype\bin\Debug\net6.0\GamePrototype.deps.json
+D:\Desktop\Лабараторные\Курс\GamePrototype\bin\Debug\net6.0\GamePrototype.runtimeconfig.json
+D:\Desktop\Лабараторные\Курс\GamePrototype\bin\Debug\net6.0\GamePrototype.dll
+D:\Desktop\Лабараторные\Курс\GamePrototype\bin\Debug\net6.0\GamePrototype.pdb
+D:\Desktop\Лабараторные\Курс\GamePrototype\obj\Debug\net6.0\GamePrototype.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\Лабараторные\Курс\GamePrototype\obj\Debug\net6.0\GamePrototype.AssemblyInfoInputs.cache
+D:\Desktop\Лабараторные\Курс\GamePrototype\obj\Debug\net6.0\GamePrototype.AssemblyInfo.cs
+D:\Desktop\Лабараторные\Курс\GamePrototype\obj\Debug\net6.0\GamePrototype.csproj.CoreCompileInputs.cache
+D:\Desktop\Лабараторные\Курс\GamePrototype\obj\Debug\net6.0\GamePrototype.dll
+D:\Desktop\Лабараторные\Курс\GamePrototype\obj\Debug\net6.0\refint\GamePrototype.dll
+D:\Desktop\Лабараторные\Курс\GamePrototype\obj\Debug\net6.0\GamePrototype.pdb
+D:\Desktop\Лабараторные\Курс\GamePrototype\obj\Debug\net6.0\GamePrototype.genruntimeconfig.cache
+D:\Desktop\Лабараторные\Курс\GamePrototype\obj\Debug\net6.0\ref\GamePrototype.dll

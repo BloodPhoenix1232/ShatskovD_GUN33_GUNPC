@@ -17,7 +17,21 @@ namespace GamePrototype.Units
         {
             if (_equipment.TryGetValue(EquipSlot.Weapon, out var item) && item is Weapon weapon) 
             {
+                weapon.ReduceDurability(3);
+                Console.WriteLine($"Текущая прочность оружия: {weapon.Durability}");
+                if(weapon.Durability <= 0)
+                {
+                    _equipment.Remove(EquipSlot.Weapon);
+                    Inventory.TryRemove(weapon);
+                }
                 return BaseDamage + weapon.Damage;
+            }
+
+            if (_equipment.TryGetValue(EquipSlot.Weapon, out var item1) && item1 is RangeWeapon rangeWeapon)
+            {
+                rangeWeapon.ReduceDurability(3);
+                Console.WriteLine($"Текущая прочность оружия: {rangeWeapon.Durability}");
+                return BaseDamage + rangeWeapon.Damage;
             }
             return BaseDamage;
         }
@@ -25,6 +39,7 @@ namespace GamePrototype.Units
         public override void HandleCombatComplete()
         {
             var items = Inventory.Items;
+            Console.WriteLine(items.Count);
             for (int i = 0; i < items.Count; i++) 
             {
                 if (items[i] is EconomicItem economicItem) 
@@ -42,7 +57,25 @@ namespace GamePrototype.Units
                 // Item was equipped
                 return;
             }
+            else if(item is EquipItem equipItem1 && !_equipment.TryAdd(equipItem1.Slot, equipItem1))
+            {
+                Console.WriteLine($"Введите 'Yes' если хотите заменить текущее оружие на {equipItem1.Name}, иначе напишите что угодно");
+                string answer = Console.ReadLine();
+                if (answer == "Yes")
+                {
+                    ChangeEquipItem(equipItem1);
+                }
+                base.AddItemToInventory(item);
+                return;
+            }
             base.AddItemToInventory(item);
+        }
+
+        public void ChangeEquipItem(EquipItem equipItem)
+        {
+            _equipment.Remove(equipItem.Slot);
+            _equipment.TryAdd(equipItem.Slot, equipItem);
+            Console.WriteLine($"Ваше текущее оружие: {equipItem.Name}.");
         }
 
         private void UseEconomicItem(EconomicItem economicItem)
@@ -51,13 +84,40 @@ namespace GamePrototype.Units
             {
                 Health += healthPotion.HealthRestore;
             }
+
+            if (economicItem is Grindstone grindstone)
+            {
+                if (_equipment.TryGetValue(EquipSlot.Weapon, out var item) && item is Weapon weapon)
+                {
+                    //Console.WriteLine("Текущая прочность оружия: " + weapon.Durability);
+                    weapon.Repair(grindstone.DurabilityBoost);
+                    Console.WriteLine("Точильный камень использован, текущая прочность оружия: " + weapon.Durability);
+                }
+            }
         }
 
         protected override uint CalculateAppliedDamage(uint damage)
         {
-            if (_equipment.TryGetValue(EquipSlot.Armour, out var item) && item is Armour armour) 
+            _equipment.TryGetValue(EquipSlot.Armour, out var item);
+            _equipment.TryGetValue(EquipSlot.Helmet, out var item1);
+
+            if (item is Armour armour && item1 is Helmet helmet)
             {
-                damage -= (uint)(damage * (armour.Defence / 100f));
+                damage -= (uint)(damage * Math.Min(1f, (armour.Defence + helmet.Defence) / 100f));
+                armour.ReduceDurability(2);
+                helmet.ReduceDurability(3);
+            }
+
+            else if (item is Armour armourOnly)
+            {
+                damage -= (uint)(damage * Math.Min(1f, (armourOnly.Defence / 100f)));
+                armourOnly.ReduceDurability(2);
+            }
+
+            else if (item1 is Helmet helmetOnly)
+            {
+                damage -= (uint)(damage * Math.Min(1f, (helmetOnly.Defence / 100f)));
+                helmetOnly.ReduceDurability(3);
             }
             return damage;
         }
